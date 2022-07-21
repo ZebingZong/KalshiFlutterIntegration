@@ -1,0 +1,6 @@
+framework module Pods_KalshiFlutterIntegrationTests {
+  umbrella header "Pods-KalshiFlutterIntegrationTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

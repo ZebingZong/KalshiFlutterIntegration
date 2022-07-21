@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		48D7380B59910EE45C1765E1 /* Pods_KalshiFlutterIntegration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1618EED15A5BB051E7D3DC /* Pods_KalshiFlutterIntegration.framework */; };
+		93DE9DF732BC5A2703F878DD /* Pods_KalshiFlutterIntegrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 732AAD21937670441CE6BFD1 /* Pods_KalshiFlutterIntegrationTests.framework */; };
+		BE1724932883C61900E51E3D /* KSRootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1724922883C61900E51E3D /* KSRootTabBarController.swift */; };
+		BE1724952883F1EA00E51E3D /* KSDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1724942883F1EA00E51E3D /* KSDrawerViewController.swift */; };
+		BE17249928863DAB00E51E3D /* KSModalFlutterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE17249828863DAB00E51E3D /* KSModalFlutterViewController.swift */; };
+		BEE487CE2883AE00007E97F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE487CD2883AE00007E97F6 /* AppDelegate.swift */; };
+		BEE487D02883AE00007E97F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE487CF2883AE00007E97F6 /* SceneDelegate.swift */; };
+		BEE487D72883AE03007E97F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEE487D62883AE03007E97F6 /* Assets.xcassets */; };
+		BEE487DA2883AE03007E97F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEE487D82883AE03007E97F6 /* LaunchScreen.storyboard */; };
+		BEE487E52883AE03007E97F6 /* KalshiFlutterIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE487E42883AE03007E97F6 /* KalshiFlutterIntegrationTests.swift */; };
+		BEE487EF2883AE03007E97F6 /* KalshiFlutterIntegrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE487EE2883AE03007E97F6 /* KalshiFlutterIntegrationUITests.swift */; };
+		BEE487F12883AE03007E97F6 /* KalshiFlutterIntegrationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE487F02883AE03007E97F6 /* KalshiFlutterIntegrationUITestsLaunchTests.swift */; };
+		BEE488012883B462007E97F6 /* KSTabHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE488002883B462007E97F6 /* KSTabHomeViewController.swift */; };
+		BEE488032883B478007E97F6 /* KSTabFlutterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE488022883B478007E97F6 /* KSTabFlutterViewController.swift */; };
+		BEF80DEF2886B2BB0006D9E1 /* UIViewController+Kalshi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF80DEE2886B2BB0006D9E1 /* UIViewController+Kalshi.swift */; };
+		F3E14C5F90C07A0E3FB70E35 /* Pods_KalshiFlutterIntegrationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F40AB8BC812FAD022EA49CA9 /* Pods_KalshiFlutterIntegrationUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BEE487E12883AE03007E97F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEE487C22883AE00007E97F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEE487C92883AE00007E97F6;
+			remoteInfo = KalshiFlutterIntegration;
+		};
+		BEE487EB2883AE03007E97F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEE487C22883AE00007E97F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEE487C92883AE00007E97F6;
+			remoteInfo = KalshiFlutterIntegration;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D12ADFAAAEC565C6176B9A6 /* Pods-KalshiFlutterIntegration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KalshiFlutterIntegration.release.xcconfig"; path = "Target Support Files/Pods-KalshiFlutterIntegration/Pods-KalshiFlutterIntegration.release.xcconfig"; sourceTree = "<group>"; };
+		23C623649E7ED37906A55B4E /* Pods-KalshiFlutterIntegrationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KalshiFlutterIntegrationTests.debug.xcconfig"; path = "Target Support Files/Pods-KalshiFlutterIntegrationTests/Pods-KalshiFlutterIntegrationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		732AAD21937670441CE6BFD1 /* Pods_KalshiFlutterIntegrationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KalshiFlutterIntegrationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AFEED88338CEBBEF594F47B /* Pods-KalshiFlutterIntegration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KalshiFlutterIntegration.debug.xcconfig"; path = "Target Support Files/Pods-KalshiFlutterIntegration/Pods-KalshiFlutterIntegration.debug.xcconfig"; sourceTree = "<group>"; };
+		9C1618EED15A5BB051E7D3DC /* Pods_KalshiFlutterIntegration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KalshiFlutterIntegration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD24A29204B090368D6C9482 /* Pods-KalshiFlutterIntegrationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KalshiFlutterIntegrationUITests.release.xcconfig"; path = "Target Support Files/Pods-KalshiFlutterIntegrationUITests/Pods-KalshiFlutterIntegrationUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BE1724922883C61900E51E3D /* KSRootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSRootTabBarController.swift; sourceTree = "<group>"; };
+		BE1724942883F1EA00E51E3D /* KSDrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSDrawerViewController.swift; sourceTree = "<group>"; };
+		BE172496288631C300E51E3D /* Info-Release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Release.plist"; sourceTree = "<group>"; };
+		BE17249828863DAB00E51E3D /* KSModalFlutterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSModalFlutterViewController.swift; sourceTree = "<group>"; };
+		BEE487CA2883AE00007E97F6 /* KalshiFlutterIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KalshiFlutterIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEE487CD2883AE00007E97F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BEE487CF2883AE00007E97F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BEE487D62883AE03007E97F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEE487D92883AE03007E97F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BEE487DB2883AE03007E97F6 /* Info-Debug.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Debug.plist"; sourceTree = "<group>"; };
+		BEE487E02883AE03007E97F6 /* KalshiFlutterIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KalshiFlutterIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEE487E42883AE03007E97F6 /* KalshiFlutterIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalshiFlutterIntegrationTests.swift; sourceTree = "<group>"; };
+		BEE487EA2883AE03007E97F6 /* KalshiFlutterIntegrationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KalshiFlutterIntegrationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEE487EE2883AE03007E97F6 /* KalshiFlutterIntegrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalshiFlutterIntegrationUITests.swift; sourceTree = "<group>"; };
+		BEE487F02883AE03007E97F6 /* KalshiFlutterIntegrationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalshiFlutterIntegrationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BEE488002883B462007E97F6 /* KSTabHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSTabHomeViewController.swift; sourceTree = "<group>"; };
+		BEE488022883B478007E97F6 /* KSTabFlutterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSTabFlutterViewController.swift; sourceTree = "<group>"; };
+		BEF80DEE2886B2BB0006D9E1 /* UIViewController+Kalshi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Kalshi.swift"; sourceTree = "<group>"; };
+		BEF80DF02887A45A0006D9E1 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		C93623CF3CE2825FA74A8587 /* Pods-KalshiFlutterIntegrationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KalshiFlutterIntegrationTests.release.xcconfig"; path = "Target Support Files/Pods-KalshiFlutterIntegrationTests/Pods-KalshiFlutterIntegrationTests.release.xcconfig"; sourceTree = "<group>"; };
+		F40AB8BC812FAD022EA49CA9 /* Pods_KalshiFlutterIntegrationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KalshiFlutterIntegrationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC7B47D69A237551B70157EB /* Pods-KalshiFlutterIntegrationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KalshiFlutterIntegrationUITests.debug.xcconfig"; path = "Target Support Files/Pods-KalshiFlutterIntegrationUITests/Pods-KalshiFlutterIntegrationUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEE487C72883AE00007E97F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48D7380B59910EE45C1765E1 /* Pods_KalshiFlutterIntegration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEE487DD2883AE03007E97F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93DE9DF732BC5A2703F878DD /* Pods_KalshiFlutterIntegrationTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEE487E72883AE03007E97F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3E14C5F90C07A0E3FB70E35 /* Pods_KalshiFlutterIntegrationUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8570B84E8D2F9D3E153DB5A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AFEED88338CEBBEF594F47B /* Pods-KalshiFlutterIntegration.debug.xcconfig */,
+				1D12ADFAAAEC565C6176B9A6 /* Pods-KalshiFlutterIntegration.release.xcconfig */,
+				23C623649E7ED37906A55B4E /* Pods-KalshiFlutterIntegrationTests.debug.xcconfig */,
+				C93623CF3CE2825FA74A8587 /* Pods-KalshiFlutterIntegrationTests.release.xcconfig */,
+				FC7B47D69A237551B70157EB /* Pods-KalshiFlutterIntegrationUITests.debug.xcconfig */,
+				BD24A29204B090368D6C9482 /* Pods-KalshiFlutterIntegrationUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BEE487C12883AE00007E97F6 = {
+			isa = PBXGroup;
+			children = (
+				BEF80DF02887A45A0006D9E1 /* readme.md */,
+				BEE487CC2883AE00007E97F6 /* KalshiFlutterIntegration */,
+				BEE487E32883AE03007E97F6 /* KalshiFlutterIntegrationTests */,
+				BEE487ED2883AE03007E97F6 /* KalshiFlutterIntegrationUITests */,
+				BEE487CB2883AE00007E97F6 /* Products */,
+				8570B84E8D2F9D3E153DB5A7 /* Pods */,
+				F3EBA82DFB5C3C89F0261FA5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BEE487CB2883AE00007E97F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEE487CA2883AE00007E97F6 /* KalshiFlutterIntegration.app */,
+				BEE487E02883AE03007E97F6 /* KalshiFlutterIntegrationTests.xctest */,
+				BEE487EA2883AE03007E97F6 /* KalshiFlutterIntegrationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEE487CC2883AE00007E97F6 /* KalshiFlutterIntegration */ = {
+			isa = PBXGroup;
+			children = (
+				BEF80DF22887A7A70006D9E1 /* Extensions */,
+				BEE487FF2883B379007E97F6 /* ViewControllers */,
+				BEE487CD2883AE00007E97F6 /* AppDelegate.swift */,
+				BEE487CF2883AE00007E97F6 /* SceneDelegate.swift */,
+				BEE487D62883AE03007E97F6 /* Assets.xcassets */,
+				BEE487D82883AE03007E97F6 /* LaunchScreen.storyboard */,
+				BEE487DB2883AE03007E97F6 /* Info-Debug.plist */,
+				BE172496288631C300E51E3D /* Info-Release.plist */,
+			);
+			path = KalshiFlutterIntegration;
+			sourceTree = "<group>";
+		};
+		BEE487E32883AE03007E97F6 /* KalshiFlutterIntegrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				BEE487E42883AE03007E97F6 /* KalshiFlutterIntegrationTests.swift */,
+			);
+			path = KalshiFlutterIntegrationTests;
+			sourceTree = "<group>";
+		};
+		BEE487ED2883AE03007E97F6 /* KalshiFlutterIntegrationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BEE487EE2883AE03007E97F6 /* KalshiFlutterIntegrationUITests.swift */,
+				BEE487F02883AE03007E97F6 /* KalshiFlutterIntegrationUITestsLaunchTests.swift */,
+			);
+			path = KalshiFlutterIntegrationUITests;
+			sourceTree = "<group>";
+		};
+		BEE487FF2883B379007E97F6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BE1724922883C61900E51E3D /* KSRootTabBarController.swift */,
+				BE1724942883F1EA00E51E3D /* KSDrawerViewController.swift */,
+				BE17249828863DAB00E51E3D /* KSModalFlutterViewController.swift */,
+				BEE488002883B462007E97F6 /* KSTabHomeViewController.swift */,
+				BEE488022883B478007E97F6 /* KSTabFlutterViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BEF80DF22887A7A70006D9E1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BEF80DEE2886B2BB0006D9E1 /* UIViewController+Kalshi.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F3EBA82DFB5C3C89F0261FA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C1618EED15A5BB051E7D3DC /* Pods_KalshiFlutterIntegration.framework */,
+				732AAD21937670441CE6BFD1 /* Pods_KalshiFlutterIntegrationTests.framework */,
+				F40AB8BC812FAD022EA49CA9 /* Pods_KalshiFlutterIntegrationUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEE487C92883AE00007E97F6 /* KalshiFlutterIntegration */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEE487F42883AE03007E97F6 /* Build configuration list for PBXNativeTarget "KalshiFlutterIntegration" */;
+			buildPhases = (
+				6414E8FCF32FA6CDF5DBA5BF /* [CP] Check Pods Manifest.lock */,
+				375642412B3B97358285D802 /* [CP-User] Run Flutter Build kalshi_flutter Script */,
+				BEE487C62883AE00007E97F6 /* Sources */,
+				BEE487C72883AE00007E97F6 /* Frameworks */,
+				BEE487C82883AE00007E97F6 /* Resources */,
+				E8FE5B783078604DE7DB77C7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KalshiFlutterIntegration;
+			productName = KalshiFlutterIntegration;
+			productReference = BEE487CA2883AE00007E97F6 /* KalshiFlutterIntegration.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BEE487DF2883AE03007E97F6 /* KalshiFlutterIntegrationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEE487F72883AE03007E97F6 /* Build configuration list for PBXNativeTarget "KalshiFlutterIntegrationTests" */;
+			buildPhases = (
+				7CAABAFEF27B4AB8CBF78472 /* [CP] Check Pods Manifest.lock */,
+				BEE487DC2883AE03007E97F6 /* Sources */,
+				BEE487DD2883AE03007E97F6 /* Frameworks */,
+				BEE487DE2883AE03007E97F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEE487E22883AE03007E97F6 /* PBXTargetDependency */,
+			);
+			name = KalshiFlutterIntegrationTests;
+			productName = KalshiFlutterIntegrationTests;
+			productReference = BEE487E02883AE03007E97F6 /* KalshiFlutterIntegrationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BEE487E92883AE03007E97F6 /* KalshiFlutterIntegrationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEE487FA2883AE03007E97F6 /* Build configuration list for PBXNativeTarget "KalshiFlutterIntegrationUITests" */;
+			buildPhases = (
+				5496B640293A06F99322D1C2 /* [CP] Check Pods Manifest.lock */,
+				BEE487E62883AE03007E97F6 /* Sources */,
+				BEE487E72883AE03007E97F6 /* Frameworks */,
+				BEE487E82883AE03007E97F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEE487EC2883AE03007E97F6 /* PBXTargetDependency */,
+			);
+			name = KalshiFlutterIntegrationUITests;
+			productName = KalshiFlutterIntegrationUITests;
+			productReference = BEE487EA2883AE03007E97F6 /* KalshiFlutterIntegrationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEE487C22883AE00007E97F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					BEE487C92883AE00007E97F6 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					BEE487DF2883AE03007E97F6 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = BEE487C92883AE00007E97F6;
+					};
+					BEE487E92883AE03007E97F6 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = BEE487C92883AE00007E97F6;
+					};
+				};
+			};
+			buildConfigurationList = BEE487C52883AE00007E97F6 /* Build configuration list for PBXProject "KalshiFlutterIntegration" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BEE487C12883AE00007E97F6;
+			productRefGroup = BEE487CB2883AE00007E97F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEE487C92883AE00007E97F6 /* KalshiFlutterIntegration */,
+				BEE487DF2883AE03007E97F6 /* KalshiFlutterIntegrationTests */,
+				BEE487E92883AE03007E97F6 /* KalshiFlutterIntegrationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEE487C82883AE00007E97F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEE487DA2883AE03007E97F6 /* LaunchScreen.storyboard in Resources */,
+				BEE487D72883AE03007E97F6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEE487DE2883AE03007E97F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEE487E82883AE03007E97F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		375642412B3B97358285D802 /* [CP-User] Run Flutter Build kalshi_flutter Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Run Flutter Build kalshi_flutter Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/kalshi_flutter/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
+		};
+		5496B640293A06F99322D1C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KalshiFlutterIntegrationUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6414E8FCF32FA6CDF5DBA5BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KalshiFlutterIntegration-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CAABAFEF27B4AB8CBF78472 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KalshiFlutterIntegrationTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8FE5B783078604DE7DB77C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KalshiFlutterIntegration/Pods-KalshiFlutterIntegration-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KalshiFlutterIntegration/Pods-KalshiFlutterIntegration-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KalshiFlutterIntegration/Pods-KalshiFlutterIntegration-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEE487C62883AE00007E97F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE1724952883F1EA00E51E3D /* KSDrawerViewController.swift in Sources */,
+				BE1724932883C61900E51E3D /* KSRootTabBarController.swift in Sources */,
+				BE17249928863DAB00E51E3D /* KSModalFlutterViewController.swift in Sources */,
+				BEE488032883B478007E97F6 /* KSTabFlutterViewController.swift in Sources */,
+				BEF80DEF2886B2BB0006D9E1 /* UIViewController+Kalshi.swift in Sources */,
+				BEE487CE2883AE00007E97F6 /* AppDelegate.swift in Sources */,
+				BEE488012883B462007E97F6 /* KSTabHomeViewController.swift in Sources */,
+				BEE487D02883AE00007E97F6 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEE487DC2883AE03007E97F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEE487E52883AE03007E97F6 /* KalshiFlutterIntegrationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEE487E62883AE03007E97F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEE487F12883AE03007E97F6 /* KalshiFlutterIntegrationUITestsLaunchTests.swift in Sources */,
+				BEE487EF2883AE03007E97F6 /* KalshiFlutterIntegrationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BEE487E22883AE03007E97F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEE487C92883AE00007E97F6 /* KalshiFlutterIntegration */;
+			targetProxy = BEE487E12883AE03007E97F6 /* PBXContainerItemProxy */;
+		};
+		BEE487EC2883AE03007E97F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEE487C92883AE00007E97F6 /* KalshiFlutterIntegration */;
+			targetProxy = BEE487EB2883AE03007E97F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BEE487D82883AE03007E97F6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEE487D92883AE03007E97F6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEE487F22883AE03007E97F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BEE487F32883AE03007E97F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEE487F52883AE03007E97F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AFEED88338CEBBEF594F47B /* Pods-KalshiFlutterIntegration.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 66WU35L75G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "KalshiFlutterIntegration/Info-$(CONFIGURATION).plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = andrewz.KalshiFlutterIntegration;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BEE487F62883AE03007E97F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D12ADFAAAEC565C6176B9A6 /* Pods-KalshiFlutterIntegration.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 66WU35L75G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "KalshiFlutterIntegration/Info-$(CONFIGURATION).plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = andrewz.KalshiFlutterIntegration;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BEE487F82883AE03007E97F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23C623649E7ED37906A55B4E /* Pods-KalshiFlutterIntegrationTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 66WU35L75G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = andrewz.KalshiFlutterIntegrationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KalshiFlutterIntegration.app/KalshiFlutterIntegration";
+			};
+			name = Debug;
+		};
+		BEE487F92883AE03007E97F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C93623CF3CE2825FA74A8587 /* Pods-KalshiFlutterIntegrationTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 66WU35L75G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = andrewz.KalshiFlutterIntegrationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KalshiFlutterIntegration.app/KalshiFlutterIntegration";
+			};
+			name = Release;
+		};
+		BEE487FB2883AE03007E97F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC7B47D69A237551B70157EB /* Pods-KalshiFlutterIntegrationUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 66WU35L75G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = andrewz.KalshiFlutterIntegrationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KalshiFlutterIntegration;
+			};
+			name = Debug;
+		};
+		BEE487FC2883AE03007E97F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD24A29204B090368D6C9482 /* Pods-KalshiFlutterIntegrationUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 66WU35L75G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = andrewz.KalshiFlutterIntegrationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KalshiFlutterIntegration;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEE487C52883AE00007E97F6 /* Build configuration list for PBXProject "KalshiFlutterIntegration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEE487F22883AE03007E97F6 /* Debug */,
+				BEE487F32883AE03007E97F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEE487F42883AE03007E97F6 /* Build configuration list for PBXNativeTarget "KalshiFlutterIntegration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEE487F52883AE03007E97F6 /* Debug */,
+				BEE487F62883AE03007E97F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEE487F72883AE03007E97F6 /* Build configuration list for PBXNativeTarget "KalshiFlutterIntegrationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEE487F82883AE03007E97F6 /* Debug */,
+				BEE487F92883AE03007E97F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEE487FA2883AE03007E97F6 /* Build configuration list for PBXNativeTarget "KalshiFlutterIntegrationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEE487FB2883AE03007E97F6 /* Debug */,
+				BEE487FC2883AE03007E97F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BEE487C22883AE00007E97F6 /* Project object */;
+}

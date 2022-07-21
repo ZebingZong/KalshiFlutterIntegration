@@ -1,0 +1,28 @@
+PODS:
+  - Flutter (1.0.0)
+  - FlutterPluginRegistrant (0.0.1):
+    - Flutter
+  - kalshi_flutter (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `kalshi_flutter/.ios/Flutter/engine`)
+  - FlutterPluginRegistrant (from `kalshi_flutter/.ios/Flutter/FlutterPluginRegistrant`)
+  - kalshi_flutter (from `kalshi_flutter/.ios/Flutter`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: kalshi_flutter/.ios/Flutter/engine
+  FlutterPluginRegistrant:
+    :path: kalshi_flutter/.ios/Flutter/FlutterPluginRegistrant
+  kalshi_flutter:
+    :path: kalshi_flutter/.ios/Flutter
+
+SPEC CHECKSUMS:
+  Flutter: bdfa2e8fe0e2880a2c6a58a0b1a8675c262a07af
+  FlutterPluginRegistrant: d3a0fbc12bc47787a12fcc919193f3959aa7d5ad
+  kalshi_flutter: 67542842f6d1e04586b9736dd907203e73fa311e
+
+PODFILE CHECKSUM: eb3ad9680033201707f2b1867389456eafe1e35c
+
+COCOAPODS: 1.11.3
