@@ -1,3 +1,24 @@
+## How to run the project
+1. go to flutter main project fold and build flutter pages for iOS. From the CLI, run:
+```
+cd kalshi_flutter
+flutter build ios
+```
+- since we don't need to run on iOS devices for now, just ignore the errors:
+```
+It appears that your application still contains the default signing identifier.
+Try replacing 'com.example' with your signing id in Xcode:
+  open ios/Runner.xcworkspace
+Encountered error while building for device.
+```
+2. go to flutterIntegration main project folder and install necessary dependencies. From the CLI, run:
+```
+cd ../
+pod install
+```
+3. open `KalshiFlutterIntegration.xcworkspace`, select the appropriate iOS simulator and run
+
+
 ## The overall VC tree
 
 

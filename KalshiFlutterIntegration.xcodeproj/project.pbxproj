@@ -22,6 +22,7 @@
 		BEE488012883B462007E97F6 /* KSTabHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE488002883B462007E97F6 /* KSTabHomeViewController.swift */; };
 		BEE488032883B478007E97F6 /* KSTabFlutterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE488022883B478007E97F6 /* KSTabFlutterViewController.swift */; };
 		BEF80DEF2886B2BB0006D9E1 /* UIViewController+Kalshi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF80DEE2886B2BB0006D9E1 /* UIViewController+Kalshi.swift */; };
+		BEF80DF62888EBC70006D9E1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BEF80DF52888EBC70006D9E1 /* README.md */; };
 		F3E14C5F90C07A0E3FB70E35 /* Pods_KalshiFlutterIntegrationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F40AB8BC812FAD022EA49CA9 /* Pods_KalshiFlutterIntegrationUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,7 +68,7 @@
 		BEE488002883B462007E97F6 /* KSTabHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSTabHomeViewController.swift; sourceTree = "<group>"; };
 		BEE488022883B478007E97F6 /* KSTabFlutterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSTabFlutterViewController.swift; sourceTree = "<group>"; };
 		BEF80DEE2886B2BB0006D9E1 /* UIViewController+Kalshi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Kalshi.swift"; sourceTree = "<group>"; };
-		BEF80DF02887A45A0006D9E1 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		BEF80DF52888EBC70006D9E1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C93623CF3CE2825FA74A8587 /* Pods-KalshiFlutterIntegrationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KalshiFlutterIntegrationTests.release.xcconfig"; path = "Target Support Files/Pods-KalshiFlutterIntegrationTests/Pods-KalshiFlutterIntegrationTests.release.xcconfig"; sourceTree = "<group>"; };
 		F40AB8BC812FAD022EA49CA9 /* Pods_KalshiFlutterIntegrationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KalshiFlutterIntegrationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC7B47D69A237551B70157EB /* Pods-KalshiFlutterIntegrationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KalshiFlutterIntegrationUITests.debug.xcconfig"; path = "Target Support Files/Pods-KalshiFlutterIntegrationUITests/Pods-KalshiFlutterIntegrationUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,7 +118,7 @@
 		BEE487C12883AE00007E97F6 = {
 			isa = PBXGroup;
 			children = (
-				BEF80DF02887A45A0006D9E1 /* readme.md */,
+				BEF80DF52888EBC70006D9E1 /* README.md */,
 				BEE487CC2883AE00007E97F6 /* KalshiFlutterIntegration */,
 				BEE487E32883AE03007E97F6 /* KalshiFlutterIntegrationTests */,
 				BEE487ED2883AE03007E97F6 /* KalshiFlutterIntegrationUITests */,
@@ -308,6 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEF80DF62888EBC70006D9E1 /* README.md in Resources */,
 				BEE487DA2883AE03007E97F6 /* LaunchScreen.storyboard in Resources */,
 				BEE487D72883AE03007E97F6 /* Assets.xcassets in Resources */,
 			);
