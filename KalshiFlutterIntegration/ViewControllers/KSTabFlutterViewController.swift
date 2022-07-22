@@ -20,7 +20,6 @@ class KSTabFlutterViewController: FlutterViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupKSDrawableLeftBarItem()
-        navigationController?.navigationBar.barStyle = .black
     }
         
     @objc internal override func openKSLeftDrawer() {

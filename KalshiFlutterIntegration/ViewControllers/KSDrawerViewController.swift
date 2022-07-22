@@ -93,7 +93,7 @@ class KSDrawerViewController: UIViewController, KSDrawerPresentable {
     }()
     
     private func setupUI() {
-        view.backgroundColor = UIColor.systemIndigo
+        view.backgroundColor = UIColor.systemCyan
         view.addSubview(hamburgerButton)
         view.addSubview(openButton)
         view.addSubview(closeButton)

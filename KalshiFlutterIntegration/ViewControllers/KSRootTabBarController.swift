@@ -69,7 +69,12 @@ class KSRootTabBarController: UITabBarController {
         let firstVC = UINavigationController(rootViewController: tabHomeVC)
         
         let flutterItem = UITabBarItem(tabBarSystemItem: .recents, tag: 1)
-        let tabFlutterVC = KSTabFlutterViewController()
+        let tabFlutterVC:KSTabFlutterViewController
+        if let flutterEngine = (UIApplication.shared.delegate as? AppDelegate)?.flutterEngine {
+            tabFlutterVC = KSTabFlutterViewController(engine: flutterEngine, nibName: nil, bundle: nil)
+        } else {
+            tabFlutterVC = KSTabFlutterViewController()
+        }
         tabFlutterVC.tabBarItem = flutterItem
         tabFlutterVC.listener = self
         let secondVC = UINavigationController(rootViewController: tabFlutterVC)
