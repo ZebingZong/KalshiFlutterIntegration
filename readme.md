@@ -1,3 +1,10 @@
+## Demos
+![Page 1](/Demos/1.png)
+![page 2](/Demos/2.png)
+![Page 3](/Demos/3.png)
+![Page 4](/Demos/4.png)
+![Page 4](/Demos/5.png)
+
 ## How to run the project
 1. go to flutter main project fold and build flutter pages for iOS. From the CLI, run:
 ```
