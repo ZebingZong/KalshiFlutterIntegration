@@ -9,9 +9,9 @@
 1. go to flutter main project fold and build flutter pages for iOS. From the CLI, run:
 ```
 cd kalshi_flutter
-flutter build ios
+flutter pub get
 ```
-- since we don't need to run on iOS devices for now, just ignore the errors:
+- since we don't need to run on iOS devices for now, just ignore the errors if encountered:
 ```
 It appears that your application still contains the default signing identifier.
 Try replacing 'com.example' with your signing id in Xcode:
@@ -38,9 +38,7 @@ pod install
         |                      |                      |                       |
 KSDrawerViewController  presentingContainer  UINavigationController  UINavigationController
                                |                      |                       | 
-                        UINavigationController  KSTabHomeViewController  KSTabFlutterViewController
-                               |
-                    KSModalFlutterViewController
+                    KSModalFlutterViewController  KSTabHomeViewController  KSTabFlutterViewController
 
 ```
 
@@ -57,7 +55,8 @@ KSDrawerViewController  presentingContainer  UINavigationController  UINavigatio
     - it is responsible to present the full screen modal flutter vc
 
 4. `KSModalFlutterViewController` is the full screen presented modal flutter vc
-    - it commicates to `KSRootTabBarController` with `KSModalFlutterViewControllerListener` to open left drawer and close itself
+    - it communicates to `KSRootTabBarController` with `KSModalFlutterViewControllerListener` to open left drawer and close itself
+    - it also communicates to Flutter client with `MethodChannel`
 
 5. `KSTabHomeViewController` is the content VC of first tab
     - it communicates to `KSRootTabBarController` with `KSTabHomeViewControllerListener` to open drawer and present full screen modal flutter vc
