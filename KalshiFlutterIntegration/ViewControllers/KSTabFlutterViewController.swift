@@ -13,7 +13,7 @@ protocol KSTabFlutterViewControllerListener: AnyObject {
     func openDrawer(animated: Bool)
 }
 
-class KSTabFlutterViewController: FlutterViewController {
+class KSTabFlutterViewController: KSFlutterViewController {
     
     var listener: KSTabFlutterViewControllerListener?
     

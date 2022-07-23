@@ -7,21 +7,14 @@
 
 import UIKit
 import Flutter
-import FlutterPluginRegistrant
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    lazy var flutterEngine = FlutterEngine(name: "KalshiFlutterIntegration")
+    lazy var flutterEngines = FlutterEngineGroup(name: ProjectName, project: nil)
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        // Runs the default Dart entrypoint with a default Flutter route.
-        flutterEngine.run();
-        // Used to connect plugins (only if you have plugins with iOS platform code).
-        GeneratedPluginRegistrant.register(with: self.flutterEngine);
-        
         return true
     }
 

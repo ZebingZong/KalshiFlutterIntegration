@@ -62,6 +62,7 @@ class KSRootTabBarController: UITabBarController {
     }
     
     private func setupTabBar() {
+        tabBar.backgroundColor = .systemBackground
         let homeItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
         let tabHomeVC = KSTabHomeViewController()
         tabHomeVC.tabBarItem = homeItem
@@ -69,12 +70,7 @@ class KSRootTabBarController: UITabBarController {
         let firstVC = UINavigationController(rootViewController: tabHomeVC)
         
         let flutterItem = UITabBarItem(tabBarSystemItem: .recents, tag: 1)
-        let tabFlutterVC:KSTabFlutterViewController
-        if let flutterEngine = (UIApplication.shared.delegate as? AppDelegate)?.flutterEngine {
-            tabFlutterVC = KSTabFlutterViewController(engine: flutterEngine, nibName: nil, bundle: nil)
-        } else {
-            tabFlutterVC = KSTabFlutterViewController()
-        }
+        let tabFlutterVC = KSTabFlutterViewController()
         tabFlutterVC.tabBarItem = flutterItem
         tabFlutterVC.listener = self
         let secondVC = UINavigationController(rootViewController: tabFlutterVC)
@@ -86,15 +82,8 @@ class KSRootTabBarController: UITabBarController {
 extension KSRootTabBarController: KSDrawerViewControllerListener {
     
     func presentFlutterVC() {
-        guard let flutterEngine = (UIApplication.shared.delegate as? AppDelegate)?.flutterEngine else {
-            return
-        }
-        
-        let flutterVC = KSModalFlutterViewController(engine: flutterEngine,
-                                                     nibName: nil,
-                                                     bundle: nil)
-        flutterVC.listener = self
-        let presentedVC = UINavigationController(rootViewController: flutterVC)
+        let presentedVC = KSModalFlutterViewController()
+        presentedVC.listener = self
         presentedVC.modalPresentationStyle = .overCurrentContext
         presentingContainer.present(presentedVC, animated: true, completion: nil)
         drawerVC.updateButtonState(isPresentingFlutterVC: true)

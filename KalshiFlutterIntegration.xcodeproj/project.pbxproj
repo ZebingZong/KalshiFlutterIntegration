@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		48D7380B59910EE45C1765E1 /* Pods_KalshiFlutterIntegration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1618EED15A5BB051E7D3DC /* Pods_KalshiFlutterIntegration.framework */; };
 		93DE9DF732BC5A2703F878DD /* Pods_KalshiFlutterIntegrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 732AAD21937670441CE6BFD1 /* Pods_KalshiFlutterIntegrationTests.framework */; };
+		BE14A9F4288BDE1E00719F15 /* KSFlutterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE14A9F3288BDE1E00719F15 /* KSFlutterViewController.swift */; };
 		BE1724932883C61900E51E3D /* KSRootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1724922883C61900E51E3D /* KSRootTabBarController.swift */; };
 		BE1724952883F1EA00E51E3D /* KSDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1724942883F1EA00E51E3D /* KSDrawerViewController.swift */; };
 		BE17249928863DAB00E51E3D /* KSModalFlutterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE17249828863DAB00E51E3D /* KSModalFlutterViewController.swift */; };
@@ -50,6 +51,7 @@
 		9AFEED88338CEBBEF594F47B /* Pods-KalshiFlutterIntegration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KalshiFlutterIntegration.debug.xcconfig"; path = "Target Support Files/Pods-KalshiFlutterIntegration/Pods-KalshiFlutterIntegration.debug.xcconfig"; sourceTree = "<group>"; };
 		9C1618EED15A5BB051E7D3DC /* Pods_KalshiFlutterIntegration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KalshiFlutterIntegration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD24A29204B090368D6C9482 /* Pods-KalshiFlutterIntegrationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KalshiFlutterIntegrationUITests.release.xcconfig"; path = "Target Support Files/Pods-KalshiFlutterIntegrationUITests/Pods-KalshiFlutterIntegrationUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BE14A9F3288BDE1E00719F15 /* KSFlutterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSFlutterViewController.swift; sourceTree = "<group>"; };
 		BE1724922883C61900E51E3D /* KSRootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSRootTabBarController.swift; sourceTree = "<group>"; };
 		BE1724942883F1EA00E51E3D /* KSDrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSDrawerViewController.swift; sourceTree = "<group>"; };
 		BE172496288631C300E51E3D /* Info-Release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Release.plist"; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				BE17249828863DAB00E51E3D /* KSModalFlutterViewController.swift */,
 				BEE488002883B462007E97F6 /* KSTabHomeViewController.swift */,
 				BEE488022883B478007E97F6 /* KSTabFlutterViewController.swift */,
+				BE14A9F3288BDE1E00719F15 /* KSFlutterViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -433,6 +436,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE1724952883F1EA00E51E3D /* KSDrawerViewController.swift in Sources */,
+				BE14A9F4288BDE1E00719F15 /* KSFlutterViewController.swift in Sources */,
 				BE1724932883C61900E51E3D /* KSRootTabBarController.swift in Sources */,
 				BE17249928863DAB00E51E3D /* KSModalFlutterViewController.swift in Sources */,
 				BEE488032883B478007E97F6 /* KSTabFlutterViewController.swift in Sources */,

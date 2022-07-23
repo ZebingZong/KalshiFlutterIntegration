@@ -12,25 +12,32 @@ protocol KSModalFlutterViewControllerListener: AnyObject {
     func dimissFlutterVC()
 }
 
-class KSModalFlutterViewController: FlutterViewController {
+class KSModalFlutterViewController: KSFlutterViewController {
 
     weak var listener: KSModalFlutterViewControllerListener?
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        setupKSDrawableLeftBarItem()
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .close,
-                                                            target: self,
-                                                            action: #selector(closeSelf))
-        navigationController?.navigationBar.barStyle = .default
-    }
-        
-    @objc internal override func openKSLeftDrawer() {
-        listener?.openDrawer(animated: true)
+    init() {
+        super.init(entryPoint: "presentedMain")
     }
     
-    @objc private func closeSelf() {
-        listener?.dimissFlutterVC()
+    required init(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        channel.setMethodCallHandler({ [weak self] (call: FlutterMethodCall, result: @escaping FlutterResult) in
+            if call.method == "closeSelf" {
+                self?.listener?.dimissFlutterVC()
+                result(nil)
+            } else if call.method == "openDrawer" {
+                self?.listener?.openDrawer(animated: true)
+                result(nil)
+            } else {
+                result(FlutterMethodNotImplemented)
+            }
+        })
+    }
+    
+    private lazy var channel = FlutterMethodChannel(name: ProjectName, binaryMessenger: self.binaryMessenger)
 }
