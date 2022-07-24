@@ -27,7 +27,7 @@ class KSTabHomeViewController: UIViewController {
     // MAKR: - Private
     
     private func setupUI() {
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = .systemCyan
         setupKSDrawableLeftBarItem()
         view.addSubview(openButton)
     }

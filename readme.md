@@ -11,13 +11,6 @@
 cd kalshi_flutter
 flutter pub get
 ```
-- since we don't need to run on iOS devices for now, just ignore the errors if encountered:
-```
-It appears that your application still contains the default signing identifier.
-Try replacing 'com.example' with your signing id in Xcode:
-  open ios/Runner.xcworkspace
-Encountered error while building for device.
-```
 2. go to flutterIntegration main project folder and install necessary dependencies. From the CLI, run:
 ```
 cd ../
