@@ -23,12 +23,15 @@ class TabPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        body: SizedBox.expand(
-          child: Container(
-            color: Colors.greenAccent,
-          ),
-        ),
+    return const Scaffold(
+      backgroundColor: Colors.lightGreenAccent,
+      body: Center(
+        child: Text(
+            "This is a flutter page.",
+            style: TextStyle(
+                fontSize: 20.0,
+                color: Colors.green)),
+      ),
     );
   }
 }
@@ -67,6 +70,7 @@ class _MyPresentedPageState extends State<MyPresentedPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.lightGreenAccent,
       appBar: AppBar(
         leading: Builder(
           builder: (BuildContext context) {
@@ -82,8 +86,15 @@ class _MyPresentedPageState extends State<MyPresentedPage> {
               onPressed: () { _closeSelf(); },
               icon: const Icon(Icons.close))
         ],
+        backgroundColor: Colors.green,
       ),
-      backgroundColor: Colors.greenAccent,
+      body: const Center(
+        child: Text(
+            "This is a flutter page.",
+            style: TextStyle(
+                fontSize: 20.0,
+                color: Colors.green)),
+      ),
     );
   }
 }
